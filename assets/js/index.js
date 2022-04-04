@@ -26,7 +26,7 @@ function HTML(title, cards, imgPath, seta) {
         <div class="content__title">
           <h2 data-title>${title}</h2>
           <div>
-            <a href="">Ver tudo <img src="${seta}" /></a>
+            <a href="assets/pages/allproducts/index.html">Ver tudo <img src="${seta}" /></a>
           </div>
         </div>
         <div class="card__container">
@@ -72,11 +72,12 @@ window.onload = function () {
     lupa: "assets/img/lupa.png",
     home: "#",
     imgSeta: "assets/img/seta.png",
-    imgSlider: "assets/img/setaSlider.png"
+    imgSlider: "assets/img/setaSlider.png",
+    allProducts: "assets/pages/allproducts/index.html"
   } 
 
   nav(paths);
-  containerCards(lista, 0, path, seta);
+  containerCards(lista, 0, path, paths.imgSeta);
   footer(paths);  
 }
 
