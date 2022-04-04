@@ -1,0 +1,58 @@
+.main__login{
+  height: 100%;
+  width: 100%;  
+  position: fixed;
+}
+
+.add__product{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+.add__product h2{
+  width: 50%;
+}
+
+.add__product--upload{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.add__product--upload label{
+  cursor: pointer;
+}
+
+.add__product--select{
+  display: none;
+}
+
+.add__product--input{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.add__product--input input{
+  padding-left: 5px;
+  width: 100%;
+}
+.add__product--input input[type=text]{
+  height: 40px;
+}
+
+.add__product--input input:focus{
+  outline: none;
+}
+
+.add__product--input textarea{
+  padding-left: 5px;
+  padding-top: 5px;
+  height: 60px;
+  resize: none;
+}

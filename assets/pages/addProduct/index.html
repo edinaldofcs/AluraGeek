@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>AluraGeek</title>
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/components/nav-header.css">
+  <link rel="stylesheet" href="../../css/components/logo.css">
+  <link rel="stylesheet" href="../../css/components/footer.css">
+  <link rel="stylesheet" href="../../css/components/btn.css">
+  <link rel="stylesheet" href="../../css/pages/home/content.css">
+  <link rel="stylesheet" href="add-product.css">
+</head>
+
+<body>
+  <nav class="navHeader">
+    <div class="navHeader__left">
+      <div class="logo">
+        <a href="">
+          <img src="../../img/controle.png" alt="imagem de um controle de videogame">
+          <img src="../../img/alura.png" alt="alura">
+          <img src="../../img/geek.png" alt="geek">
+        </a>
+      </div>
+      <div class="navHeader__search">
+        <input type="text" class="navHeader__search--input" placeholder="O que deseja encontrar?" />
+        <img src="../../img/lupa.png" alt="imagem de uma lupa, para pesquisa" class="navHeader__search--img">
+      </div>
+    </div>
+    <a href="../login/index.html" class="">Login</a>
+  </nav>
+
+  <main>
+    <form action="" class="add__product">
+      <h2>Adicionar novo produto</h2>
+      <div class="add__product--upload">
+        <img src="../../img/card.png">
+        <p>Ou</p>
+        <label for='select' class="btn__submit">Procurar no computador</label>
+        <input id='select' type='file' class="add__product--select" accept="image/*">
+      </div>
+      <div class="add__product--input">
+        <input type="text" placeholder="Digite seu email">
+        <input type="text" placeholder="Digite seu email">
+        <textarea placeholder="Descrição do produto"></textarea>
+        <input type="submit" class="btn__submit" value="Adicionar produto">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="logo">
+        <a href="">
+          <img src="../../img/controle.png" alt="imagem de um controle de videogame">
+          <img src="../../img/alura.png" alt="alura">
+          <img src="../../img/geek.png" alt="geek">
+        </a>
+      </div>
+      <div class="footer__text">
+        <a href="">Quem somos nós</a href="">
+        <a href="">Política de privacidade</a href="">
+        <a href="">Programa fidelidade</a href="">
+        <a href="">Nossas lojas</a href="">
+        <a href="">Quero ser franqueado</a href="">
+        <a href="">Anuncie aqui</a href="">
+      </div>
+      <div class="footer__forms">
+        <p>Fale conosco</p>
+        <input type="text" placeholder="Digite seu nome" />
+        <textarea placeholder="Escreva sua mensagem"></textarea>
+        <input type="submit" value="Enviar mensagem" class="btn__submit" />
+      </div>
+    </section>
+    <div class="footer__dev">
+      <p>Desenvolvido por Edinaldofcs</p>
+    </div>
+  </footer>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

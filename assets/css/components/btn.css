@@ -1,0 +1,12 @@
+.btn__submit{
+  padding: 16px;
+  background: #2A7AE4;
+  width: fit-content;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+#btn__color{
+  color: #fff;
+} 

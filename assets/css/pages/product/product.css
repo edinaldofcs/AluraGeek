@@ -1,0 +1,21 @@
+.product{
+  display: flex;  
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.product__img{
+  background-image: url("../../../img/card.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50vw;
+  height: 40vh;
+}
+.product__infos{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

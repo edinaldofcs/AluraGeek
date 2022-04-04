@@ -1,0 +1,7 @@
+.logo a{
+  display: flex;
+  align-items: center;
+}
+.logo a img:first-child{
+  margin: 0 5px;
+}
