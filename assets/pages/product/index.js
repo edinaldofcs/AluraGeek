@@ -33,14 +33,15 @@ window.onload = function () {
   title.innerHTML = "Produtos similares"
 
   const paths = {
-    controle: "assets/img/controle.png",
-    alura: "assets/img/alura.png",
-    geek: "assets/img/geek.png",
-    lupa: "assets/img/lupa.png",
-    home: "#",
+    controle: "../../img/controle.png",
+    alura: "../../img/alura.png",
+    geek: "../../img/geek.png",
+    lupa: "../../img/lupa.png",
+    home: "../../../index.html",
     imgSeta: "../../img/seta.png",
     imgSlider: "../../img/setaSlider.png"
   } 
+  
 
   nav(paths);
   productInfo(lista[listIndex].produtos[id-1].infos)
