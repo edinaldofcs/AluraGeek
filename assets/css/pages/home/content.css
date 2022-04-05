@@ -78,17 +78,16 @@ main{
   flex-flow: row nowrap;
   width: 100%;
   overflow: hidden;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 /**/
 .content__card img{
   width: 100%;
-  cursor: pointer;
-  transition: 1s;
+  cursor: pointer;  
   max-height: 300px;
 }
-.content__card:hover img{
-  transform: scale(1.02);
+.content__card:hover{
+  transform: scale(1.03);
 }
 
 .content__card{
@@ -101,6 +100,7 @@ main{
   width: calc((100% / 6) - (var(--gap) - (var(--gap) / 6)));
   flex-shrink: 0;
   justify-content: space-between; 
+  transition: 0.3s;
 }
 
 .card__info{

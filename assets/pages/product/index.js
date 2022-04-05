@@ -24,14 +24,6 @@ window.onload = function () {
   const id = url.searchParams.get('id')
 
   
-  
-  const path = '../../img/setaSlider.png'
-  const seta = '../../img/seta.png'
-  const productURL = ''
-  containerCards(lista[listIndex],listIndex,path,seta,productURL);
-  const title = document.querySelector('[data-title]')
-  title.innerHTML = "Produtos similares"
-
   const paths = {
     controle: "../../img/controle.png",
     alura: "../../img/alura.png",
@@ -39,8 +31,37 @@ window.onload = function () {
     lupa: "../../img/lupa.png",
     home: "../../../index.html",
     imgSeta: "../../img/seta.png",
-    imgSlider: "../../img/setaSlider.png"
+    imgSlider: "../../img/setaSlider.png",
+    allProducts: "../allproducts/index.html",
+    productList: lista[listIndex],
+    productAmount: '',
+    listIndex: listIndex,
+    url: "",
+    login: "../login/index.html"
   } 
+  
+  // const path = '../../img/setaSlider.png'
+  // const seta = '../../img/seta.png'
+  const productURL = ''
+  containerCards(paths);
+  const title = document.querySelector('[data-title]')
+  title.innerHTML = "Produtos similares"
+
+
+  // const paths = {
+  //   controle: "assets/img/controle.png",
+  //   alura: "assets/img/alura.png",
+  //   geek: "assets/img/geek.png",
+  //   lupa: "assets/img/lupa.png",
+  //   home: "#",
+  //   imgSeta: "assets/img/seta.png",
+  //   imgSlider: "assets/img/setaSlider.png",
+  //   allProducts: "assets/pages/allproducts/index.html",
+  //   productList: lista,
+  //   productAmount: lista.length,
+  //   listIndex: '',
+  //   url: "./assets/pages/product/index.html"
+  // }
   
 
   nav(paths);

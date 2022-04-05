@@ -17,11 +17,17 @@ window.onload = function () {
     lupa: "../../img/lupa.png",
     home: "../../../index.html",
     imgSeta: "../../img/seta.png",
-    imgSlider: "../../img/setaSlider.png"
+    imgSlider: "../../img/setaSlider.png",
+    allProducts: "../allproducts/index.html",
+    productList: lista,
+    productAmount: lista.length,
+    listIndex: '',
+    url: "../product/index.html",
+    login: "../login/index.html"
   } 
 
   nav(paths);
-  containerCards(lista, 0, path, seta, productURL);
+  containerCards(paths);
   footer(paths);  
 
   const titulos = document.querySelectorAll('.content__title')

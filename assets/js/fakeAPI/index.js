@@ -138,61 +138,61 @@ export const lista = [{
   produtos: [{
     infos: {
       id: 1,
-      nome: "Controle XYZ",
+      nome: "One piece",
       img: "https://artesetra.com.br/wp-content/uploads/2021/01/20210102_one_piece_luffy.jpg",
       preco: 60.15,
-      descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
+      descricao: "One Piece é uma série de mangá escrita e ilustrada por Eiichiro Oda. Os capítulos têm sido serializados na revista Weekly Shōnen Jump desde 22 de julho de 1997, com os capítulos compilados e publicados em 100 volumes tankōbon pela editora Shueisha até setembro de 2021. "
     }
   },
   {
     infos: {
       id: 2,
-      nome: "Controle XYZ",
+      nome: "One Punch-Man",
       img: "https://m.media-amazon.com/images/I/619i1o5c2JL._SL1500_.jpg",
       preco: 60.16,
-      descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
+      descricao: "One Punch-Man é uma série de webcomic criada pelo autor com o pseudónimo One,[5] e é publicada desde 2009. A série rapidamente tornou-se um fenómeno viral, alcançando mais de 7,9 milhões de acessos, em junho de 2012."
     }
   },
   {
     infos: {
       id: 3,
-      nome: "Controle XYZ",
+      nome: "Nanatsu no Taizai",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsUq2WjD69n4Q5xiWxA93YMFf2LhKnlbtpgcZQO3iQXHtgNbC4M5r21s9SY1EHXPtdpBQ&usqp=CAU",
       preco: 60.17,
-      descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
+      descricao: "Nanatsu no Taizai (Os sete pecados capitais), é uma série de mangá escrito e ilustrado por Nakaba Suzuki. Foi serializado na revista Weekly Shōnen Magazine da Kodansha de outubro de 2012 até março de 2020, com os capítulos coletados em quarenta e um volumes de tankōbon."
     }
   },
   {
     infos: {
       id: 4,
-      nome: "Controle XYZ",
+      nome: "Naruto",
       img: "https://i.pinimg.com/originals/a7/5e/9e/a75e9e35a8ed1ccc1017db40438c60e9.jpg",
       preco: 60.18,
-      descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
+      descricao: "Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento e sonha em se tornar Hokage, o ninja líder de sua vila."
     }
   },
   {
     infos: {
       id: 5,
-      nome: "Controle XYZ",
+      nome: "Dragon Ball",
       img: "http://pm1.narvii.com/7828/849557d07a9390fc03b546f24fca611a7ac51640r1-736-670v2_uhq.jpg",
       preco: 60.19,
-      descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
+      descricao: "Dragon Ball é uma franquia de mídia japonesa criada por Akira Toriyama. Originalmente iniciada com uma série de mangá que foi escrita e ilustrada por Toriyama, teve os seus capítulos serializados na revista Weekly Shonen Jump de 1984 a 1995, com os seus 519 capítulos compilados em 42 volumes tankōbon e publicados pela editora Shueisha."
     }
   },
   {
     infos: {
       id: 6,
-      nome: "Controle XYZ",
+      nome: "Samurai-X",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT64owhBLUJa0enpJKiRdjiQN-gBcCghmY3Z3X07-_QKdgMZfMsc1JUyT1kEKFEAiQUOTY&usqp=CAU",
       preco: 60.20,
-      descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
+      descricao: "Samurai X é uma série de mangá criada pelo artista Nobuhiro Watsuki e posteriormente adaptada em anime. A série, ambientada nos primeiros anos da Era Meiji no Japão, conta a história de Kenshin Himura um pacífico espadachim que prometeu nunca mais matar."
     }
   },
   {
     infos: {
       id: 7,
-      nome: "Controle XYZ",
+      nome: "shingeki no kyojin",
       img: "https://i.pinimg.com/originals/6d/52/ea/6d52ea3bc699885f73b0025e40f55ee1.jpg",
       preco: 60.21,
       descricao: "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"

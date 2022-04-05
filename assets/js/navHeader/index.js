@@ -25,7 +25,7 @@ export function nav(paths) {
       <img src="${paths.lupa}" alt="imagem de uma lupa, para pesquisa" class="navHeader__search--img">
     </div>
   </div>
-  <a href="assets/pages/login/index.html" class="">Login</a>
+  ${paths.login && (`<a href="${paths.login}" class="">Login</a>`)}
   `;
 
   navHeader.innerHTML = html;
