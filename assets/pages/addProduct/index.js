@@ -41,7 +41,7 @@ window.onload = function () {
     formArea.forEach(item => {
       if (!item.value) {
         send = false;
-        console.log("mostrar mensagem de erro")
+        alert("Campos inválidos")
       }
     })
 
@@ -82,7 +82,7 @@ window.onload = function () {
       const add = [...produto, novoProduto]
       localStorage.setItem('lista', JSON.stringify(add))
       
-      console.log("Adiconar ao localStorage");
+      alert("Item adicionado com sucesso!");
 
     }
   })
