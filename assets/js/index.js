@@ -2,6 +2,27 @@ import { lista } from './fakeAPI/index.js'
 import { slider } from './slider/index.js'
 import { nav, footer } from './navHeader/index.js'
 
+export function updateList(){
+  if(JSON.parse(localStorage.getItem('lista'))){
+    const novos = JSON.parse(localStorage.getItem('lista'))
+    
+    novos.map((item)=>{
+      let validar = true
+  
+      lista.map((el)=>{
+        if(el.titulo.toLowerCase() == item.titulo.toLowerCase()){
+          el.produtos.push(item.produtos[0])
+          validar = false
+        }
+      })
+      if(validar){
+        lista.push(item)
+      }
+      
+    })
+  }
+}
+
 export function createCards(data) {
   var cardContainer = ''
   data.product.produtos.map((element) => {
@@ -10,7 +31,7 @@ export function createCards(data) {
       <a href="${data.url}?listIndex=${data.index}&id=${element.infos.id}"><img src="${element.infos.img}" alt=""></a>
       <div class="card__info">
         <p class="content__card--title">${element.infos.nome}</p>
-        <p class="content__card--price">R$ ${element.infos.preco.toFixed(2)}</p>
+        <p class="content__card--price">R$ ${element.infos.preco}</p>
         <a href="${data.url}?listIndex=${data.index}&id=${element.infos.id}">Ver produto</a>
       </div>
     </div>`
@@ -66,6 +87,7 @@ export function containerCards(paths) {
 
 window.onload = function () {
 
+  updateList();
 
   const paths = {
     controle: "assets/img/controle.png",

@@ -22,68 +22,31 @@
 </head>
 
 <body>
-  <nav class="navHeader">
-    <div class="navHeader__left">
-      <div class="logo">
-        <a href="">
-          <img src="../../img/controle.png" alt="imagem de um controle de videogame">
-          <img src="../../img/alura.png" alt="alura">
-          <img src="../../img/geek.png" alt="geek">
-        </a>
-      </div>
-      <div class="navHeader__search">
-        <input type="text" class="navHeader__search--input" placeholder="O que deseja encontrar?" />
-        <img src="../../img/lupa.png" alt="imagem de uma lupa, para pesquisa" class="navHeader__search--img">
-      </div>
-    </div>
-    <a href="../login/index.html" class="">Login</a>
+  <nav class="navHeader" data-nav>
+    <!-- JS  -->
   </nav>
 
   <main>
-    <form action="" class="add__product">
+    <form action="" class="add__product" data-form>
       <h2>Adicionar novo produto</h2>
       <div class="add__product--upload">
         <img src="../../img/card.png">
         <p>Ou</p>
-        <label for='select' class="btn__submit">Procurar no computador</label>
-        <input id='select' type='file' class="add__product--select" accept="image/*">
+        <label for='select' class="btn__submit">Fazer upload</label>
+        <input id='select' type='file' class="add__product--select" accept="image/*"/>
       </div>
       <div class="add__product--input">
-        <input type="text" placeholder="Digite seu email">
-        <input type="text" placeholder="Digite seu email">
-        <textarea placeholder="Descrição do produto"></textarea>
-        <input type="submit" class="btn__submit" value="Adicionar produto">
+        <input type="text" placeholder="Categoria do produto" required id="categoria"/>
+        <input type="text" placeholder="Nome do Produto" required id="nome"/>
+        <input type="number" placeholder="Preço do produto" required id="preco"/>
+        <textarea placeholder="Descrição do produto" required id="descricao"></textarea>
+        <input type="submit" class="btn__submit" value="Adicionar produto" data-send>
       </div>
     </form>
   </main>
 
-  <footer>
-    <section class="footer">
-      <div class="logo">
-        <a href="">
-          <img src="../../img/controle.png" alt="imagem de um controle de videogame">
-          <img src="../../img/alura.png" alt="alura">
-          <img src="../../img/geek.png" alt="geek">
-        </a>
-      </div>
-      <div class="footer__text">
-        <a href="">Quem somos nós</a href="">
-        <a href="">Política de privacidade</a href="">
-        <a href="">Programa fidelidade</a href="">
-        <a href="">Nossas lojas</a href="">
-        <a href="">Quero ser franqueado</a href="">
-        <a href="">Anuncie aqui</a href="">
-      </div>
-      <div class="footer__forms">
-        <p>Fale conosco</p>
-        <input type="text" placeholder="Digite seu nome" />
-        <textarea placeholder="Escreva sua mensagem"></textarea>
-        <input type="submit" value="Enviar mensagem" class="btn__submit" />
-      </div>
-    </section>
-    <div class="footer__dev">
-      <p>Desenvolvido por Edinaldofcs</p>
-    </div>
+  <footer data-footer>
+    <!-- JS -->
   </footer>
   <script type="module" src="index.js"></script>
 </body>

@@ -1,10 +1,11 @@
 import { lista } from '../../js/fakeAPI/index.js'
-import { containerCards } from '../../js/index.js'
+import { containerCards, updateList } from '../../js/index.js'
 import { footer, nav } from '../../js/navHeader/index.js'
 
 
 window.onload = function () {
-  // return
+  
+  updateList();
   
   const path = '../../img/setaSlider.png'
   const seta = '../../img/seta.png'
