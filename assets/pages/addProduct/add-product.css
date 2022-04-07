@@ -107,6 +107,26 @@ main{
   width: 100%;
 }
 
+.msg{
+  color: var(--white_100);
+  display: none;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  top: 20px;
+  width: 90%;
+}
+.msg--erro{
+  background-color: var(--erro);
+  display: block;
+}
+.msg--enviar{
+  background-color: var(--enviar);
+  display: block;
+}
+
 @media screen and (min-width: 550px) {
   .add__product--upload{
     flex-direction: row;

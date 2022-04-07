@@ -27,8 +27,8 @@ footer{
   flex-direction: column;
   gap: 15px;  
   justify-content: space-around;
-  text-align: center;
-  width: 50%;
+  text-align: center;  
+  width: 100%;
 }
 
 .footer__text{
