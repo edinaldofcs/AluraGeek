@@ -104,6 +104,7 @@ main{
   row-gap: 12px;
   transition: 0.3s;
   width: calc((100% / 6) - (var(--gap) - (var(--gap) / 6)));
+  overflow: hidden;
 }
 
 .card__info{
