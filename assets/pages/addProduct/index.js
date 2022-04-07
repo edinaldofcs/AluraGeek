@@ -11,28 +11,34 @@ window.onload = function () {
     lupa: "../../img/lupa.png",
     home: "../../../index.html",
     url: "../product/index.html",
-    login: "../login/index.html"
+    login: "../login/index.html",
+    inputShow: true,
   }
 
   nav(paths);
   footer(paths);
 
-  const img = document.getElementById("select");
-  var teste = '';
-  var fReader = new FileReader();
-  img.addEventListener('change', () => {
-    fReader.readAsDataURL(img.files[0]);
-    fReader.onloadend = function (event) {
-      teste = event.target.result
-      // console.log("Adicionado com sucesso! " + "event.target.result" + teste);
-    }
-  })
+  const img = document.querySelectorAll("#select");
+  var imgPath = null;
+  const file = document.querySelector("[data-imgFile]")
 
+  img.forEach((inputFile) => {
+    inputFile.addEventListener('change', (e) => {
+      var fReader = new FileReader();
+      fReader.readAsDataURL(inputFile.files[0]);
+      fReader.onloadend = function (event) {
+        imgPath = event.target.result
+        file.textContent = inputFile.files[0].name
+        file.classList.add('show')
+      }
+    })
+  })
+  
   const titulo = document.getElementById('categoria')
   const nome = document.getElementById('nome')
   const preco = document.getElementById('preco')
   const descricao = document.getElementById('descricao')
-  const formArea = [img, titulo, nome, preco, descricao]
+  const formArea = [titulo, nome, preco, descricao]
 
   const enviar = document.querySelector('[data-send]')
   enviar.addEventListener('click', (e) => {
@@ -44,8 +50,12 @@ window.onload = function () {
         alert("Campos inválidos")
       }
     })
+    if (!imgPath) {
+      alert('sem nada');
+      send = false;
+    }
 
-    if (send) {      
+    if (send) {
       updateList();
       var idTemp = 0;
       var unique = true
@@ -58,7 +68,7 @@ window.onload = function () {
         }
       }
 
-      if(unique){
+      if (unique) {
         idTemp = 1;
       }
 
@@ -70,19 +80,25 @@ window.onload = function () {
           infos: {
             id: idTemp,
             nome: nome.value,
-            img: teste,
+            img: imgPath,
             preco: Number(preco.value).toFixed(2),
             descricao: descricao.value
           }
         }]
       }
-      
+
       const produto = JSON.parse(localStorage.getItem('lista')) || []
-      
+
       const add = [...produto, novoProduto]
       localStorage.setItem('lista', JSON.stringify(add))
-      
+
       alert("Item adicionado com sucesso!");
+      titulo.value = ''
+      nome.value = ''
+      preco.value = ''
+      descricao.value = ''      
+      file.textContent = ''
+      file.classList.remove('show')
 
     }
   })

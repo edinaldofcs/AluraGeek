@@ -1,48 +1,97 @@
-.main__login{
-  height: 100%;
-  width: 100%;  
-  position: fixed;
+@import '../../css/color.css';
+
+main{
+  background-color: var(--white_background);
+  padding-top: 30px;
 }
 
 .add__product{
-  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   row-gap: 15px;
+  width: 100%;
 }
 .add__product h2{
-  width: 50%;
+  font-size: 20px;
 }
 
 .add__product--upload{
-  width: 50%;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
+  justify-content: space-around;
+  width: 100%;
 }
-.add__product--upload label{
+
+.upload__file{
+  align-items:center;
+  background-color: var(--white_100);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  height: 200px;
+  padding: 25px;
+  position: relative;
+  width: 100%;
+}
+.upload__file p{
+  text-align: center;
 }
 
-.add__product--select{
+.add__product--upload img{
+  width: 50px;
+}
+
+.add__product--upload .label{
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#select{
+  cursor: pointer;
+  height: 100%;
+  opacity: 0%;
+  left: 0;  
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+.img__select{
+  background-color: var(--blue_img);
+  color: var(--white_100);
   display: none;
+  font-size: 20px;
+  height: 40px;
+  line-height:40px;
+  text-align: center;
+  width: 100%;
 }
 
+.show{
+  display: block;
+}
 .add__product--input{
-  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+  width: 100%;
 }
 
 .add__product--input input{
   padding-left: 5px;
   width: 100%;
 }
-.add__product--input input[type=text]{
+.add__product--input input[type=text],
+.add__product--input input[type=number]{
   height: 40px;
 }
 
@@ -51,8 +100,39 @@
 }
 
 .add__product--input textarea{
+  height: 60px;
   padding-left: 5px;
   padding-top: 5px;
-  height: 60px;
   resize: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+  .add__product--upload{
+    flex-direction: row;
+    width: 80%;
+  }
+  .add__product h2{
+    font-size: 32px;
+  }
+  .add__product--input{
+    align-items: center;
+  }
+  .add__product--input input,
+  .add__product--input textarea,
+  .img__select{
+    width: 80%;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .add__product--upload{
+    width: 60%;
+  }
+  .add__product--input input,
+  .add__product--input textarea,
+  .img__select{
+    width: 60%;
+  }
 }

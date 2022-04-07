@@ -102,7 +102,8 @@ window.onload = function () {
     productAmount: lista.length,
     listIndex: '',
     url: "./assets/pages/product/index.html",
-    login: "assets/pages/login/index.html"
+    login: "assets/pages/login/index.html",
+    inputShow: true,
   }
 
   nav(paths);

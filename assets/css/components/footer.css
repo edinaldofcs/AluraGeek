@@ -1,25 +1,34 @@
+@import '../color.css';
+
 footer{
-  width: 100%;
+  background-color: var(--white_footer);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 19px;
   letter-spacing: 0em;
-  text-align: left;
-  background-color: #EAF2FD;
+  line-height: 19px;
   position: relative;
+  text-align: left;
+  width: 100%;
 }
 
 .footer{  
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  padding: 40px 60px;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;  
+  padding: 20px;  
 }
+
 .container{
-  width: 50%;
+  align-items: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   gap: 15px;  
+  justify-content: space-around;
+  text-align: center;
+  width: 50%;
 }
 
 .footer__text{
@@ -29,23 +38,23 @@ footer{
   width: fit-content;  
 }
 .footer__forms{
-  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  width: 100%;
 }
 .footer__forms p{
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 19px;
 }
 .footer__forms input[type=text],
 .footer__forms textarea{
-  width:100%;
-  height: 40px;
   border: 0;
+  height: 40px;
   margin-bottom: 10px;
   padding-left: 5px;
+  width:100%;
 }
 .footer__forms input[type=text]:focus,
 .footer__forms textarea:focus{
@@ -53,45 +62,52 @@ footer{
 }
 
 .footer__forms textarea{
-  padding-top: 10px;
-  height: 82px;
-  background: #FFFFFF;
   border-radius: 4px;
+  height: 82px;
+  padding-top: 10px;
   resize: none;
 }
 
 .footer__dev{
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  background-color: #FFF;
+  background-color: var(--white_100);
   left: 0;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
-.fixed{
-  position: fixed;
+/* .fixed{
   bottom: 0;  
-}
+  position: fixed;
+} */
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 550px){
   .container{
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 550px){
-  .container{
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: fit-content;
   }
   .footer{
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
     gap: 20px;
-    padding: 20px;
+    padding: 40px 60px;
   }
   .footer__forms{
-    width: 100%;
+    width: 70%;
   }
 }
+
+@media screen and (min-width: 768px){
+  .footer__forms{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+

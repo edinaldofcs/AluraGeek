@@ -17,8 +17,10 @@
   <link rel="stylesheet" href="../../css/components/logo.css">
   <link rel="stylesheet" href="../../css/components/footer.css">
   <link rel="stylesheet" href="../../css/components/btn.css">
-  <link rel="stylesheet" href="../../css/pages/home/content.css">
+  <link rel="stylesheet" href="../../css/components/content.css">
   <link rel="stylesheet" href="add-product.css">
+  
+
 </head>
 
 <body>
@@ -30,12 +32,18 @@
     <form action="" class="add__product" data-form>
       <h2>Adicionar novo produto</h2>
       <div class="add__product--upload">
-        <img src="../../img/card.png">
+        <div class="upload__file">
+          <img src="../../img/adicionar.png">
+          <p>Arraste para adicionar uma imagem para o produto</p>
+          <input id='select' type='file' class="add__product--select" multiple accept="image/*"/>
+        </div>
         <p>Ou</p>
-        <label for='select' class="btn__submit">Fazer upload</label>
-        <input id='select' type='file' class="add__product--select" accept="image/*"/>
+        <label for='select' class="btn__submit label">Fazer upload
+          <input id='select' type='file' class="add__product--select" multiple accept="image/*"/>
+        </label>        
       </div>
       <div class="add__product--input">
+        <p class="img__select" data-imgFile></p>
         <input type="text" placeholder="Categoria do produto" required id="categoria"/>
         <input type="text" placeholder="Nome do Produto" required id="nome"/>
         <input type="number" placeholder="Preço do produto" required id="preco"/>

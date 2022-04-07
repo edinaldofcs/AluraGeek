@@ -10,7 +10,8 @@ window.onload = function () {
     lupa: "../../img/lupa.png",
     home: "../../../index.html",
     url: "../product/index.html",
-    login: ""
+    login: "",
+    inputShow: false
   } 
 
   nav(paths);

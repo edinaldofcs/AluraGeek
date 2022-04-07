@@ -39,7 +39,8 @@ window.onload = function () {
     productAmount: '',
     listIndex: listIndex,
     url: "",
-    login: "../login/index.html"
+    login: "../login/index.html",
+    inputShow: true,
   } 
   
   // const path = '../../img/setaSlider.png'

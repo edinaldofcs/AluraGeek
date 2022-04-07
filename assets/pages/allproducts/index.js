@@ -24,7 +24,8 @@ window.onload = function () {
     productAmount: lista.length,
     listIndex: '',
     url: "../product/index.html",
-    login: "../login/index.html"
+    login: "../login/index.html",
+    inputShow: true
   } 
 
   nav(paths);
@@ -39,8 +40,7 @@ window.onload = function () {
     }
   })
   titulos[0].innerHTML = `
-  <h2 data-title>Todos os produtos</h2>
-  <a href="../addProduct/index.html" class="btn__submit" style="color: #fff">Adicionar produto</a>
+  <h2 data-title>Todos</h2>
+  <a href="../addProduct/index.html" class="btn__submit" id="btn__color">Adicionar produto</a>
   `
-
 }

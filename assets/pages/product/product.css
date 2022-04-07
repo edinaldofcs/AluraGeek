@@ -1,0 +1,36 @@
+.product{
+  align-items: center;
+  display: flex;  
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.product__img{
+  background-image: url("../../../img/card.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+.product__infos{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .product{
+    flex-direction: row;
+    gap: 20px;
+  }  
+  .product__infos{
+    width: 50%;
+  }
+  .product__img{
+    height: 40vh;
+    width: 40%;
+  }
+}
