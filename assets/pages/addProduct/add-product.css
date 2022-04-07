@@ -13,7 +13,7 @@ main{
   row-gap: 15px;
   width: 100%;
 }
-.add__product h2{
+.add__product h1{
   font-size: 20px;
 }
 
@@ -112,7 +112,7 @@ main{
     flex-direction: row;
     width: 80%;
   }
-  .add__product h2{
+  .add__product h1{
     font-size: 32px;
   }
   .add__product--input{

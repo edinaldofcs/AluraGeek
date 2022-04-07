@@ -25,7 +25,7 @@ export function nav(paths) {
       <img src="${paths.lupa}" alt="imagem de uma lupa, para pesquisa" class="navHeader__search--img">
     </div>
   </div>
-  ${paths.login && (`<div class="navHeader__login"><a href="${paths.login}" class="btn__login">Login</a><img class="lupa__hidden" src="${paths.lupa}" data-input/></div><input type="text" class="lupa__hidden--input" placeholder="O que deseja encontrar?"/>`)}
+  ${paths.login && (`<div class="navHeader__login"><a href="${paths.login}" class="btn__login">Login</a><img class="lupa__hidden" src="${paths.lupa}" alt="imagem de uma lupa" data-input/></div><input type="text" class="lupa__hidden--input" placeholder="O que deseja encontrar?"/>`)}
   `;
 
   navHeader.innerHTML = html;

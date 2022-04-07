@@ -28,7 +28,7 @@ export function createCards(data) {
   data.product.produtos.map((element) => {
     let a = `
     <div class="content__card">
-      <a href="${data.url}?listIndex=${data.index}&id=${element.infos.id}"><img src="${element.infos.img}" alt=""></a>
+      <a href="${data.url}?listIndex=${data.index}&id=${element.infos.id}"><img src="${element.infos.img}" alt="${element.infos.alt}"></a>
       <div class="card__info">
         <p class="content__card--title">${element.infos.nome}</p>
         <p class="content__card--price">R$ ${element.infos.preco}</p>
@@ -47,7 +47,7 @@ function HTML(data) {
         <div class="content__title">
           <h2 data-title>${data.title}</h2>
           <div>
-            <a href="${data.path.allProducts}">Ver tudo <img src="${data.path.imgSeta}" /></a>
+            <a href="${data.path.allProducts}">Ver tudo <img src="${data.path.imgSeta}" alt="seta apontando para a direita"/></a>
           </div>
         </div>
         <div class="card__container">
