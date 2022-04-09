@@ -1,7 +1,9 @@
+@import '../color.css';
+
 :root {
   --gap: 2%; 
-  --prymaryBlue: #2A7AE4;
 }
+
 main{
   padding: 30px 60px;
 }
@@ -14,34 +16,35 @@ main{
 }
 
 .content a{
-  color: var(--prymaryBlue);
+  color: var(--blue_primary);
 }
 
 .content__container{
-  row-gap: 14px;
+  row-gap: 14px;  
 }
 
 .content__title{
+  align-items: center;
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 .content__title h2{
-  font-weight: 700;
   font-size: 32px;
+  font-weight: 700;
   line-height: 38px;
 }
 
 .content__title div{
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .content__title a{
-  display: flex;
   column-gap: 10px;
-  font-weight: 700;
+  display: flex;
   font-size: 16px;
+  font-weight: 700;
   line-height: 19px;
 }
 .content__title a img{
@@ -56,13 +59,13 @@ main{
 }
 
 .span{
-  background-color: #EAF2FD;
-  font-weight: bold;
-  vertical-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: var(--white_footer);
   cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  vertical-align: center;
 }
 .span img{
   height: 30px;
@@ -72,35 +75,36 @@ main{
 }
 
 .cards{
-  display: flex;
   column-gap: var(--gap);
-  row-gap: 15px;
+  display: flex;
   flex-flow: row nowrap;
-  width: 100%;
   overflow: hidden;
-  padding: 5px 0;
+  padding: 15px 0;
+  row-gap: 15px;
+  width: 100%;
 }
 /**/
 .content__card img{
-  width: 100%;
-  cursor: pointer;
-  transition: 1s;
+  cursor: pointer;  
   max-height: 300px;
+  width: 100%;
 }
-.content__card:hover img{
-  transform: scale(1.02);
+.content__card:hover{
+  transform: scale(1.03);
 }
 
 .content__card{
+  background-color: var(--white_100);
+  box-shadow: 0px 1px 5px 0px rgba(28, 29, 4, 0.5);
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-  box-shadow: 0px 1px 5px 0px rgba(28, 29, 4, 0.5);
-  background-color: #fff;
-  padding: 10px;
-  width: calc((100% / 6) - (var(--gap) - (var(--gap) / 6)));
   flex-shrink: 0;
   justify-content: space-between; 
+  padding: 10px;
+  row-gap: 12px;
+  transition: 0.3s;
+  width: calc((100% / 6) - (var(--gap) - (var(--gap) / 6)));
+  overflow: hidden;
 }
 
 .card__info{
@@ -109,20 +113,14 @@ main{
   gap: 10px;
 }
 .content__card--title{
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16px;
 }
 
-.content__card--price{
-  font-weight: 700;
+.content__card--price, .content__card a{
   font-size: 16px;
-  line-height: 19px;
-}
-
-.content__card a{
   font-weight: 700;
-  font-size: 16px;
   line-height: 19px;
 }
 

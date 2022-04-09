@@ -1,0 +1,12 @@
+:root {
+  --blue_primary: #003479; 
+  --blue_secondary: rgba(212, 228, 250,1);
+  --blue_primary_hover: #015fda;
+  --blue_img: #535353;
+  --white_background: #F5F5F5;
+  --white_footer: #EAF2FD;
+  --white_100: #fff;
+  --background_header: #000;  
+  --erro: rgb(207, 10, 10);
+  --enviar: rgb(0, 126, 0);
+}

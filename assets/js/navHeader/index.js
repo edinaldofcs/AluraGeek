@@ -25,10 +25,27 @@ export function nav(paths) {
       <img src="${paths.lupa}" alt="imagem de uma lupa, para pesquisa" class="navHeader__search--img">
     </div>
   </div>
-  <a href="assets/pages/login/index.html" class="">Login</a>
+  ${paths.login && (`<div class="navHeader__login"><a href="${paths.login}" class="btn__login">Login</a><img class="lupa__hidden" src="${paths.lupa}" alt="imagem de uma lupa" data-input/></div><input type="text" class="lupa__hidden--input" placeholder="O que deseja encontrar?"/>`)}
   `;
 
   navHeader.innerHTML = html;
+
+  if(paths.inputShow){
+    inputShow();
+  }
+
+}
+
+export function inputShow(){
+  const img = document.querySelector('[data-input]')
+  img.addEventListener('click',()=>{
+    document.querySelector('.lupa__hidden--input').classList.toggle('show');
+    document.querySelector('.lupa__hidden--input').focus();
+  })
+  
+  document.querySelector('.lupa__hidden--input').addEventListener('blur',()=>{
+    document.querySelector('.lupa__hidden--input').classList.toggle('show');
+  })  
 }
 
 

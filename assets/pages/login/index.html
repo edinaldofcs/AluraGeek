@@ -17,66 +17,25 @@
   <link rel="stylesheet" href="../../css/components/logo.css">
   <link rel="stylesheet" href="../../css/components/footer.css">
   <link rel="stylesheet" href="../../css/components/btn.css">
-  <link rel="stylesheet" href="../../css/pages/home/content.css">
   <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-  <nav class="navHeader">
-    <div class="navHeader__left">
-      <div class="logo">
-        <a href="">
-          <img src="../../img/controle.png" alt="imagem de um controle de videogame">
-          <img src="../../img/alura.png" alt="alura">
-          <img src="../../img/geek.png" alt="geek">
-        </a>
-      </div>
-      <div class="navHeader__search">
-        <input type="text" class="navHeader__search--input" placeholder="O que deseja encontrar?" />
-        <img src="../../img/lupa.png" alt="imagem de uma lupa, para pesquisa" class="navHeader__search--img">
-      </div>
-    </div>
-    <a href="" class="">Login</a>
+  <nav class="navHeader navLogin" data-nav>
+    <!-- JS  -->
   </nav>
 
   <main class="main__login">
     <form action="" class="login">
       <h2>Iniciar Sessão</h2>
-      <input type="text" placeholder="Digite seu email">
-      <input type="password" placeholder="Digite sua senha">
-      <input type="submit" class="btn__submit" value="Entrar">
+      <input type="text" placeholder="Digite seu email" required/>
+      <input type="password" placeholder="Digite sua senha" name="password" autocomplete="off" required/>
+      <input type="submit" class="btn__submit" value="Entrar"/>
     </form>
   </main>
 
-  <footer>
-    <section class="footer">
-      <div class="container">
-        <div class="logo">
-          <a href="">
-            <img src="../../img/controle.png" alt="imagem de um controle de videogame">
-            <img src="../../img/alura.png" alt="alura">
-            <img src="../../img/geek.png" alt="geek">
-          </a>
-        </div>
-        <div class="footer__text">
-          <a href="">Quem somos nós</a href="">
-          <a href="">Política de privacidade</a href="">
-          <a href="">Programa fidelidade</a href="">
-          <a href="">Nossas lojas</a href="">
-          <a href="">Quero ser franqueado</a href="">
-          <a href="">Anuncie aqui</a href="">
-        </div>
-      </div>
-      <div class="footer__forms">
-        <p>Fale conosco</p>
-        <input type="text" placeholder="Digite seu nome" />
-        <textarea placeholder="Escreva sua mensagem"></textarea>
-        <input type="submit" value="Enviar mensagem" class="btn__submit" />
-      </div>
-    </section>
-    <div class="footer__dev">
-      <p>Desenvolvido por Edinaldofcs</p>
-    </div>
+  <footer data-footer>
+    <!-- JS  -->
   </footer>
   <script type="module" src="index.js"></script>
 </body>
